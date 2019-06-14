@@ -10,14 +10,14 @@ $`npm run dev`
 ## 🐠项目记录笔记
 
 ### 1.webpack4的零配置
-> 首先初始化一个项目
+>  首先初始化一个项目
 >
 `npm init -y` 注：npm init [--force|-f|--yes|-y|--scope]  其中-y参数是快速初始化。
->安装`webpack4` 和 `webpack-cli`， ps：webpack4和webpack-cli抽离里，所以需要分别安装
+>安装`webpack4`和 `webpack-cli`, ps：webpack4和webpack-cli抽离里，所以需要分别安装
 >
 `npm install webpack webpack-cli -D`
 
->webpack4 支持0配置，默认`./src/index.js`为入口,webpack运行时，会根据mode的值采取不同的配置，mode两个可选值：`production`和`development`。没有传mode，会有警告。
+>webpack4支持0配置，默认`./src/index.js`为入口,webpack运行时，会根据mode的值采取不同的配置，mode两个可选值：`production`和`development`。没有传mode，会有警告。
 >
 ```
 "scripts": {         
@@ -25,7 +25,7 @@ $`npm run dev`
     "dev": "webpack --mode development"
   },
 ```
-`development`和`production`的区别在于一个代码没压缩，一个有压缩和优化，执行`npm run dev`，就会生产一个`./dist/main.js`文件。    
+`development`和`production`的区别在于一个代码没压缩，一个有压缩和优化，执行`npm run dev`，就会生产一个`./dist/main.js`文件。  
 ### 2.自定义的webpack配置
 > webpack的零配置显然不够用，所以创建`./build/webpack.config.js`,webpack的配置大概目录如下
 >
