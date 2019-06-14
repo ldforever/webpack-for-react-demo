@@ -3,10 +3,11 @@
  * @author chennan(2829864353@qq.com)
  */
 
+import App  from './App';
 import React  from 'react';
 import ReactDOM from 'react-dom' ;
-
+import './index.css'
 ReactDOM.render(
-    '<h1>Hello, world!</h1>',
-    document.getElementById('app')
+    <App/>,
+    document.getElementById('root')
 );

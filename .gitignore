@@ -1,4 +1,5 @@
 ## .gitignore for  project
 /node_modules/
+/dist/
 
  
